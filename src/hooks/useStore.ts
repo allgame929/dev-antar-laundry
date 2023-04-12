@@ -1,4 +1,4 @@
-import { StoreRootType } from "@/stores/store.types";
+import { StoreRootType } from "../stores/store.types";
 import { useSelector } from "react-redux";
 
 const useStore = (): StoreRootType => {
