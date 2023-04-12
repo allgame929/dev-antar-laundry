@@ -1,0 +1,24 @@
+@use "src/styles/abstracts/variables" as v;
+@use "src/styles/abstracts/typo-mixins" as t;
+
+._Container {
+  margin: 24px auto;
+  .__Row {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 24px;
+
+    ._Col__Menu {
+      ._toggleBtn {
+        border: none;
+        background-color: transparent;
+        color: transparent;
+      }
+    }
+  }
+}
