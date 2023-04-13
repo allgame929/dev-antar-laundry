@@ -4,6 +4,7 @@ import Navbar from '@/components/atoms/Navbar/Navbar.component'
 import Hero from '@/components/organisms/Hero/Hero.component'
 import Dashboard from '@/components/organisms/Dashboard/Dashboard.component'
 import Service from '@/components/organisms/Service/Service.component'
+import Order from '@/components/organisms/Order/Order.component'
 
 
 const HomeView = () => {
@@ -19,6 +20,7 @@ const HomeView = () => {
                 custSaldo={5000}
                 />
                 <Service/>
+                <Order/>
             </div>
         </div>
     )

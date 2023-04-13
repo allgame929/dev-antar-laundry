@@ -1,11 +1,11 @@
 import Income from "./Income"
 import Wallet from "./Wallet"
-import Carpet from "./Income"
-import Clothing from "./Wallet"
-import Dres from "./Income"
-import Express from "./Wallet"
-import Iron from "./Income"
-import WeightScale from "./Wallet"
+import Carpet from "./Carpet"
+import Clothing from "./Clothing"
+import Dres from "./Dres"
+import Express from "./Express"
+import Iron from "./Iron"
+import WeightScale from "./WeightScale"
 
 const Icons = {
     Income: <Income/>,
@@ -15,7 +15,7 @@ const Icons = {
     Dres: <Dres/>,
     Express: <Express/>,
     Iron: <Iron/>,
-    WeightScale: <WeightScale/>
+    WeightScale: <WeightScale/>,
 }
 
 export default Icons

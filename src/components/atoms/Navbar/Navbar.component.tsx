@@ -31,12 +31,12 @@ const Navbar: FC<BCard> = (props) => {
                             <div className={s._registered}>
                                 <Button
                                     buttonTitle="Login"
-                                    buttonUrl="/login"
+                                    buttonUrl="/auth/login"
                                     className="buttonLogin"
                                 /> 
                                 <Button
                                     buttonTitle="SignUp"
-                                    buttonUrl="/sign-up"
+                                    buttonUrl="/auth/sign-up"
                                     className="buttonSignup"
                                 /> 
                             </div>
