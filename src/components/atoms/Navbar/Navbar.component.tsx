@@ -2,39 +2,50 @@ import { FC, useState } from "react"
 import { BCard } from "./Navbar.types"
 import s from "./Navbar.module.scss"
 import Image from "next/image"
+import Link from 'next/link';
+import Button from "@/components/atoms/Button/Button.component"
+
 
 const Navbar: FC<BCard> = (props) => {
-    const [open,setOpen] = useState(true)
-    const toggleMenu = () => {
-        setOpen(!open)
+    const [login,setLogin] = useState(true)
+    const toggleLogin = () => {
+        setLogin(!open)
     }
 
-    const {
-        navbarTitle,
-    }= props
+    const {    }= props
 
     return (
         <div className={s._Container}>
             <div className={s.__Row}>
                 <div className={s._Col__Logo}>
-                    <h2>{navbarTitle}</h2>
+                    <Image
+                        src="/imageAntarLaundry.svg"
+                        alt="hamburger menu"
+                        width={125}
+                        height={85}
+                    /> 
                 </div>
                 <div className={s._Col__Menu}>
-                    <button className={s._toggleBtn} onClick={toggleMenu}>
-                        {open ? (
-                            <Image
-                                src={"/menuLogo.svg"}
-                                alt="hamburger menu"
-                                width={25}
-                                height={25}
-                            /> 
+                    <button className={s._toggleBtn} onClick={toggleLogin}>
+                        {login ? (
+                            <div className={s._registered}>
+                                <Button
+                                    buttonTitle="Login"
+                                    buttonUrl="/login"
+                                    className="buttonLogin"
+                                /> 
+                                <Button
+                                    buttonTitle="SignUp"
+                                    buttonUrl="/sign-up"
+                                    className="buttonSignup"
+                                /> 
+                            </div>
+                            
                         ) : (
-                            <Image
-                                src={"/closebtn.svg"}
-                                alt="hamburger menu"
-                                width={25}
-                                height={25}
-                            /> 
+                            <Button
+                                buttonTitle="Logout"
+                                buttonUrl="/"
+                            />
                         )
                         }
                     </button>

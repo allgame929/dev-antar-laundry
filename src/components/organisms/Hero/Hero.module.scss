@@ -1,0 +1,46 @@
+@use "src/styles/abstracts/variables" as v;
+@use "src/styles/abstracts/typo-mixins" as t;
+
+._Container {
+  margin-top: -115px;
+  .__Row {
+    padding-top: 150px !important;
+    padding: 48px 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: v.$primary;
+    border-radius: 0px 0px 80px 80px;
+    @media (max-width: v.$mobile-up) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    ._Col__Text {
+      width: 100%;
+      max-width: 200px;
+      h1 {
+        @include t.heading-2;
+      }
+      @media (max-width: v.$mobile-up) {
+        text-align: start;
+        max-width: none;
+      }
+    }
+
+    ._Col__Image {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 220px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "src/styles/abstracts/variables" as v;
+@use "src/styles/abstracts/typo-mixins" as t;
+
+._Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > svg {
+    color: currentColor;
+  }
+
+  &:after {
+    display: none !important;
+  }
+}

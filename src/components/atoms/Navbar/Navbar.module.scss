@@ -2,22 +2,32 @@
 @use "src/styles/abstracts/typo-mixins" as t;
 
 ._Container {
-  margin: 24px auto;
   .__Row {
+    padding: 12px 16px;
     width: 100%;
-    max-width: 1180px;
+    max-width: 600px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 8px 24px;
+
+    ._Col__Logo {
+      img {
+        height: auto;
+      }
+    }
 
     ._Col__Menu {
+      z-index: 9;
       ._toggleBtn {
         border: none;
         background-color: transparent;
         color: transparent;
+        ._registered {
+          display: flex;
+          gap: 8px;
+        }
       }
     }
   }

@@ -1,0 +1,15 @@
+@use "src/styles/abstracts/variables" as v;
+@use "src/styles/abstracts/typo-mixins" as t;
+
+._Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: v.$accent-1;
+    color: #fff;
+  }
+}
