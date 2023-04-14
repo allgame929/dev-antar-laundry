@@ -11,8 +11,11 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    h2 {
+      @include t.heading-2;
+    }
 
     ._Col__Done,
     ._Col__Active,

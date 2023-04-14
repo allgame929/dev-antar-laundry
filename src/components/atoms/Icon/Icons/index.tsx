@@ -7,6 +7,9 @@ import Express from "./Express"
 import Iron from "./Iron"
 import WeightScale from "./WeightScale"
 import Machine from "./Machine"
+import Account from "./Account"
+import Dashboard from "./Dashboard"
+import Order from "./Order"
 
 const Icons = {
     Income: <Income/>,
@@ -18,6 +21,9 @@ const Icons = {
     Iron: <Iron/>,
     WeightScale: <WeightScale/>,
     Machine: <Machine/>,
+    Account: <Account/>,
+    Dashboard: <Dashboard/>,
+    Order: <Order/>,
 }
 
 export default Icons

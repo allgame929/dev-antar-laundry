@@ -1,12 +1,11 @@
 import { SCard } from "./Service.types"
 import { FC } from "react"
 import s from "./Service.module.scss"
-import Image from "next/image"
 import Icon from "@/components/atoms/Icon/";
 
 const Service: FC<SCard> = (props) => {
   return (
-    <div className={s._Container}>
+    <div id="ServiceSection" className={s._Container}>
       <div className={s.__Row}>
         <h2>Our Services</h2>
         <div className={s._Col__First}>

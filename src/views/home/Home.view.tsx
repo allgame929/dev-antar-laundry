@@ -5,6 +5,7 @@ import Hero from '@/components/organisms/Hero/Hero.component'
 import Dashboard from '@/components/organisms/Dashboard/Dashboard.component'
 import Service from '@/components/organisms/Service/Service.component'
 import Order from '@/components/organisms/Order/Order.component'
+import Footer from '@/components/organisms/Footer/Footer.component'
 
 
 const HomeView = () => {
@@ -21,6 +22,7 @@ const HomeView = () => {
                 />
                 <Service/>
                 <Order/>
+                <Footer/>
             </div>
         </div>
     )

@@ -10,15 +10,20 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 24px;
     align-items: flex-start;
     justify-content: center;
+
+    h2 {
+      @include t.heading-2;
+    }
 
     ._Col__First,
     ._Col__Second {
       width: 100%;
       margin: auto;
       display: flex;
+      gap: 12px;
       justify-content: space-between;
       align-items: center;
 
