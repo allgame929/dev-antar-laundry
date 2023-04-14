@@ -5,7 +5,7 @@ import Icons from "./Icons"
 
 const Icon: FC<ICard> = ({
         iconName,
-        size = 20,
+        size = 60,
         color = "inherit",
         width = size,
         height = size,
